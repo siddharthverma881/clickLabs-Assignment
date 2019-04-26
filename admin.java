@@ -113,9 +113,6 @@ class Customer{
     public void addCar(Car car){     //for adding a car to the list of cars 
         customerList.add(car);
     }
-    double resale(){    //Since this class extends an abstract class Car, so this class must also define Car's abstract functions also
-        return 1;
-    }
 }
 
 public class admin{    //this is the main class from where is program is initiated
@@ -272,8 +269,8 @@ public class admin{    //this is the main class from where is program is initiat
             System.out.println("Enter the name of the customer");
             s.nextLine();   
             String customer_name=getCustomerName();
-            Car car = EnterCarDetails(); //the name of the car is returned by the function mentioned
-            if(!(car.getCarName().equals(""))){    //if invalid car name is entered then no further will continue
+            Car car = EnterCarDetails(); //the object of the car is returned by the function mentioned
+            if(!(car.getCarName().equals(""))){    //if invalid car name is entered then no further process will continue
                 Customer customer = new Customer(customer_id,customer_name,car);
                 if(maxId<customer_id)
                     maxId=customer_id;
