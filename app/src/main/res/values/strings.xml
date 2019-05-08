@@ -1,0 +1,24 @@
+<resources>
+    <string name="appName">Assignment 2</string>
+    <string name="loginText">Log in to your account</string>
+    <string name="emailHint">Email</string>
+    <string name="passwordHint">Password</string>
+    <string name="buttonText">Log In</string>
+    <string name="noAccount">"Don't have an account?"</string>
+    <string name="register">REGISTER</string>
+
+    <string name="welcome">Welcome,</string>
+    <string name="belowWelcomeText">Please provide your basic information</string>
+    <string name="nameHint">Full Name</string>
+    <string name="genderHint">Gender</string>
+    <string name="dobHint">Date of Birth</string>
+    <string name="userTypeHint">User Type</string>
+    <string name="occupationHint">Occupation</string>
+    <string name="continueText">Continue</string>
+    <string name="differentAccount">"Sign Up with different account?"</string>
+
+    <string name="otpText">OTP Verification</string>
+    <string name="belowOtpText">"Enter the verification code \nsent to your number"</string>
+    <string name="resendButton">Resend</string>
+    <string name="submitButton">Submit</string>
+</resources>

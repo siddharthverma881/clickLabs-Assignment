@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/Signup_iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"
+        android:onClick="backButton"/>
+
+    <TextView
+        android:id="@+id/Signup_tv_welcome"
+        style="@style/RegisterButton"
+        android:textSize="@dimen/sizeXL"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorText"
+        android:layout_below="@id/Signup_iv_back"/>
+
+    <TextView
+        android:id="@+id/Signup_tv_details"
+        style="@style/RegisterButton"
+        android:textSize="@dimen/sizeSmall"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Signup_tv_welcome"
+        android:textColor="@color/colorText"/>
+
+    <ImageView
+        android:id="@+id/avatar_image_view"
+        style="@style/RegisterButton"
+        android:layout_below="@id/Signup_tv_details"
+        android:src="@drawable/user"
+        android:layout_centerInParent="true"
+        android:paddingTop="@dimen/sizeSmall"
+        />
+
+    <EditText
+        android:id="@+id/Signup_et_name"
+        style="@style/SignEditText"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:layout_below="@id/avatar_image_view"/>
+
+    <EditText
+        android:id="@+id/Signup_et_gender"
+        style="@style/SignEditText"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:layout_below="@id/Signup_et_name"/>
+
+    <EditText
+        android:id="@+id/Signup_et_userType"
+        style="@style/SignEditText"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:layout_below="@id/Signup_et_gender"/>
+
+    <EditText
+        android:id="@+id/Signup_et_occupation"
+        style="@style/SignEditText"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:layout_below="@id/Signup_et_userType"/>
+
+    <Button
+        android:id="@+id/Signup_btn_continue"
+        style="@style/SignEditText"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:onClick="confirmRegistration"
+        />
+
+    <TextView
+        android:id="@+id/Signup_tv_differentAccount"
+        style="@style/DifferentAccountButton"
+        android:layout_above="@id/Signup_btn_continue"
+        android:textColor="@color/colorPrimaryButton"
+        android:clickable="true"
+        android:onClick="backButton"
+        />
+
+</RelativeLayout>

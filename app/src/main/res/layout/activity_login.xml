@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/Login_tv_login"
+        style="@style/LoginText"
+        android:textSize="@dimen/textLarge"
+        android:layout_weight="1"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:id="@+id/Login_et_email"
+        style="@style/EditText"
+        android:inputType="textEmailAddress"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/Login_et_password"
+            style="@style/EditText"
+            android:inputType="textPassword"
+            />
+        <ImageView
+            android:id="@+id/Login_iv_eye"
+            android:src="@drawable/view1"
+            style="@style/EyeImage"
+            android:layout_marginBottom="@dimen/imageMargin"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Login_btn_login"
+        style="@style/EditText"
+        android:background="@drawable/button"
+        android:textColor="@color/colorSecondaryButton"
+        android:onClick="confirmInput"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Login_tv_notregistered"
+            style="@style/RegisterButton"
+            android:paddingLeft="@dimen/sizeXXL"
+            android:gravity="bottom"
+
+            />
+        <TextView
+            android:id="@+id/Login_tv_register"
+            style="@style/NotRegistered"
+            android:textColor="@color/colorPrimaryButton"
+            android:layout_above="@id/Login_tv_notregistered"
+            android:clickable="true"
+            android:onClick="register"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

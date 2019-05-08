@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".otp">
+
+    <ImageView
+        android:id="@+id/Otp_iv_back"
+        android:src="@drawable/back"
+        style="@style/BackButton"
+        android:onClick="backButtonPressed"/>
+
+    <TextView
+        android:id="@+id/Otp_tv_otp"
+        style="@style/RegisterButton"
+        android:textSize="@dimen/textMedium"
+        android:textColor="@color/colorText"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_below="@id/Otp_iv_back"/>
+
+    <TextView
+        android:id="@+id/Otp_tv_enterOtp"
+        android:layout_below="@id/Otp_tv_otp"
+        style="@style/RegisterButton"
+        android:textSize="@dimen/sizeSmall"
+        android:textColor="@color/colorText"
+        android:layout_marginLeft="@dimen/marginLeft"/>
+
+    <EditText
+        android:id="@+id/Otp_et_first"
+        android:layout_below="@id/Otp_tv_enterOtp"
+        style="@style/OtpValues"
+        android:padding="@dimen/padding"
+        android:inputType="number"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:imeOptions="actionDone"
+        />
+
+    <EditText
+        android:id="@+id/Otp_et_second"
+        android:layout_below="@id/Otp_tv_enterOtp"
+        android:layout_toRightOf="@id/Otp_et_first"
+        style="@style/OtpValues"
+        android:inputType="number"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:id="@+id/Otp_et_third"
+        android:layout_below="@id/Otp_tv_enterOtp"
+        android:layout_toRightOf="@id/Otp_et_second"
+        style="@style/OtpValues"
+        android:inputType="number"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:id="@+id/Otp_et_fourth"
+        android:layout_below="@id/Otp_tv_enterOtp"
+        android:layout_toRightOf="@id/Otp_et_third"
+        style="@style/OtpValues"
+        android:inputType="number"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/resend_button"
+        style="@style/OtpButton"
+        android:layout_below="@id/Otp_et_fourth"
+        android:layout_margin="@dimen/padding"
+        android:background="@drawable/light_button"
+        android:textColor="@color/colorPrimaryButton"
+        />
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/OtpButton"
+        android:layout_below="@id/Otp_et_fourth"
+        android:layout_toRightOf="@id/resend_button"
+        android:background="@drawable/button"
+        android:textColor="@color/colorSecondaryButton"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="@dimen/marginRight"
+        />
+
+</RelativeLayout>
