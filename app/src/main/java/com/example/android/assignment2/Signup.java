@@ -166,7 +166,7 @@ public class Signup extends AppCompatActivity {
             return false;
         }
         //user type can not contain any numerics
-        else if(!userType.matches("^[a-zA-Z]")){
+        else if(!userType.matches("^[a-zA-Z]*")){
             Snackbar snackbar = Snackbar.make(view,"user type can only be alphabet",Snackbar.LENGTH_LONG);
             snackbar.show();
             return false;
@@ -185,7 +185,7 @@ public class Signup extends AppCompatActivity {
             return false;
         }
         //occupation can not contain numerics
-        else if(!occupation.matches("^[a-zA-Z]")){
+        else if(!occupation.matches("^[a-zA-Z]*")){
             Snackbar snackbar = Snackbar.make(view,"occupation can only be alphabet",Snackbar.LENGTH_LONG);
             snackbar.show();
             return false;
