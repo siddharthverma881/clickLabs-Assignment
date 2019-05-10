@@ -26,6 +26,11 @@ public class otp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp);
 
+        /**
+         * @param otpText for setting the text "OTP Verification"
+         * @param belowOtpText for setting text "Enter the otp sent"
+         */
+
         //for setting the text in the textview whose id is fetched below
         //text is mentioned in the strings.xml file
         TextView otpText = (TextView) findViewById(R.id.Otp_tv_otp);

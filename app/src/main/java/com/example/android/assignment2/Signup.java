@@ -54,60 +54,60 @@ public class Signup extends AppCompatActivity {
 
 
         //when the gender field is empty then focus will automatically shift to the name field using this function
-        genderText.addTextChangedListener(new TextWatcher() {
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // TODO Auto-generated method stub
-                if (genderText.getText().toString().length() == 0)
-                {
-                    nameText.requestFocus();
-                }
-            }
-            public void beforeTextChanged(CharSequence s, int start,
-                                          int count, int after) {
-                // TODO Auto-generated method stub
-            }
-            public void afterTextChanged(Editable s) {
-                // TODO Auto-generated method stub
-            }
-        });
-
-        //when the user type field is empty then focus will automatically shift to the gender field using this function
-        userTypeText.addTextChangedListener(new TextWatcher() {
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // TODO Auto-generated method stub
-                if (userTypeText.getText().toString().length() == 0)     //size as per your requirement
-                {
-                    genderText.requestFocus();
-                }
-            }
-            public void beforeTextChanged(CharSequence s, int start,
-                                          int count, int after) {
-                // TODO Auto-generated method stub
-
-            }
-            public void afterTextChanged(Editable s) {
-                // TODO Auto-generated method stub
-            }
-        });
-
-
-        //when the occupation field is empty then focus will automatically shift to the user type field using this function
-        occupationText.addTextChangedListener(new TextWatcher() {
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // TODO Auto-generated method stub
-                if (occupationText.getText().toString().length() == 0)     //size as per your requirement
-                {
-                    userTypeText.requestFocus();
-                }
-            }
-            public void beforeTextChanged(CharSequence s, int start,
-                                          int count, int after) {
-                // TODO Auto-generated method stub
-            }
-            public void afterTextChanged(Editable s) {
-                // TODO Auto-generated method stub
-            }
-        });
+//        genderText.addTextChangedListener(new TextWatcher() {
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                // TODO Auto-generated method stub
+//                if (genderText.getText().toString().length() == 0)
+//                {
+//                    nameText.requestFocus();
+//                }
+//            }
+//            public void beforeTextChanged(CharSequence s, int start,
+//                                          int count, int after) {
+//                // TODO Auto-generated method stub
+//            }
+//            public void afterTextChanged(Editable s) {
+//                // TODO Auto-generated method stub
+//            }
+//        });
+//
+//        //when the user type field is empty then focus will automatically shift to the gender field using this function
+//        userTypeText.addTextChangedListener(new TextWatcher() {
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                // TODO Auto-generated method stub
+//                if (userTypeText.getText().toString().length() == 0)     //size as per your requirement
+//                {
+//                    genderText.requestFocus();
+//                }
+//            }
+//            public void beforeTextChanged(CharSequence s, int start,
+//                                          int count, int after) {
+//                // TODO Auto-generated method stub
+//
+//            }
+//            public void afterTextChanged(Editable s) {
+//                // TODO Auto-generated method stub
+//            }
+//        });
+//
+//
+//        //when the occupation field is empty then focus will automatically shift to the user type field using this function
+//        occupationText.addTextChangedListener(new TextWatcher() {
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                // TODO Auto-generated method stub
+//                if (occupationText.getText().toString().length() == 0)     //size as per your requirement
+//                {
+//                    userTypeText.requestFocus();
+//                }
+//            }
+//            public void beforeTextChanged(CharSequence s, int start,
+//                                          int count, int after) {
+//                // TODO Auto-generated method stub
+//            }
+//            public void afterTextChanged(Editable s) {
+//                // TODO Auto-generated method stub
+//            }
+//        });
     }
 
     //this function checks that whether the name entered matches the validation or not.
@@ -166,14 +166,8 @@ public class Signup extends AppCompatActivity {
             return false;
         }
         //user type can not contain any numerics
-        else if(userType.matches("^[0-9]")){
-            Snackbar snackbar = Snackbar.make(view,"user type can not be numeric",Snackbar.LENGTH_LONG);
-            snackbar.show();
-            return false;
-        }
-        //user type can not contain any special characters
-        else if(userType.matches("^[@#$%^&+=]")){
-            Snackbar snackbar = Snackbar.make(view,"user type can not be any special character",Snackbar.LENGTH_LONG);
+        else if(!userType.matches("^[a-zA-Z]")){
+            Snackbar snackbar = Snackbar.make(view,"user type can only be alphabet",Snackbar.LENGTH_LONG);
             snackbar.show();
             return false;
         }
@@ -191,14 +185,8 @@ public class Signup extends AppCompatActivity {
             return false;
         }
         //occupation can not contain numerics
-        else if(occupation.matches("^[0-9]")){
-            Snackbar snackbar = Snackbar.make(view,"occupation can not be numeric",Snackbar.LENGTH_LONG);
-            snackbar.show();
-            return false;
-        }
-        //occupation can not contain any special characters
-        else if(occupation.matches("^[@#$%^&+=]")){
-            Snackbar snackbar = Snackbar.make(view,"occupation can not be any special character",Snackbar.LENGTH_LONG);
+        else if(!occupation.matches("^[a-zA-Z]")){
+            Snackbar snackbar = Snackbar.make(view,"occupation can only be alphabet",Snackbar.LENGTH_LONG);
             snackbar.show();
             return false;
         }
