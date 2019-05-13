@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/list_layout_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/customer_name"
+        android:textSize="@dimen/textSize"
+        />
+    <TextView
+        android:layout_below="@id/list_layout_name"
+        android:id="@+id/list_layout_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/customer_age"
+        android:textSize="@dimen/textSize"
+
+        />
+    <TextView
+        android:layout_below="@id/list_layout_age"
+        android:id="@+id/list_layout_phno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/customer_phone_number"
+        android:textSize="@dimen/textSize"
+
+        />
+
+    <RatingBar
+        android:id="@+id/list_layout_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_layout_phno"
+        android:layout_marginTop="-3dp"
+        android:layout_weight="1"
+        android:stepSize="1" />
+
+    <ImageView
+        android:id="@+id/list_layout_cross_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/cross"/>
+
+    <ImageView
+        android:id="@+id/list_layout_photo_iv"
+        android:layout_below="@id/list_layout_cross_btn"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/list_layout_like_tv"
+            android:layout_below="@id/list_layout_photo_iv"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/list_layout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_layout_photo_iv"
+        android:layout_toLeftOf="@id/list_layout_like_tv"
+        android:text="Like" />
+</RelativeLayout>
