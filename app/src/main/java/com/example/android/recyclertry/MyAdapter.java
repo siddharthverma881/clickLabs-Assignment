@@ -14,7 +14,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
-    private ArrayList<User> mDataset;
+    private ArrayList<User> mDataset;   
 
     /**
      * @param myDataset for getting the arraylist passed from the main activity

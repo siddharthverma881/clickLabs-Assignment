@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="4dp">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -48,6 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
         android:src="@drawable/cross"/>
 
     <ImageView
@@ -56,6 +64,7 @@
         android:layout_alignParentRight="true"
         android:src="@mipmap/ic_launcher_round"
         android:layout_width="100dp"
+        android:paddingTop="5dp"
         android:layout_height="100dp" />
 
         <TextView
@@ -65,14 +74,16 @@
             android:layout_alignParentRight="true"
             android:layout_height="wrap_content"
             android:text="0"
+            android:layout_marginRight="1dp"
             android:textSize="30sp"
         />
 
     <Button
         android:id="@+id/list_layout_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/list_layout_photo_iv"
         android:layout_toLeftOf="@id/list_layout_like_tv"
         android:text="Like" />
 </RelativeLayout>
+</android.support.v7.widget.CardView>
