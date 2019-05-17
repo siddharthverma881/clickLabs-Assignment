@@ -1,28 +1,13 @@
 package Utilities;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
-import android.os.Handler;
 import android.widget.Toast;
 import com.example.android.assignment3.R;
 import com.example.android.assignment3.Student;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 
 public class util {
-
-//    public void TimeHandler(final Class<? extends Activity> firstActivity,final Class<? extends Activity> ActivityToOpen,int time){
-//        new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                Intent intent = new Intent(context, ActivityToOpen);
-//                context.startActivity(intent);
-////                finish();
-//            }
-//        }, time);
-//    }
 
     public boolean validName(Context context, String studentName, String studentRoll, String studentClass){
         if(studentName.isEmpty()){
@@ -37,10 +22,6 @@ public class util {
             Toast.makeText(context,R.string.et_roll_empty, Toast.LENGTH_SHORT).show();
             return false;
         }
-//        else if(arrayList.contains(studentRoll)){
-//            Toast.makeText(context,"Roll No already exists",Toast.LENGTH_SHORT).show();
-//            return false;
-//        }
         else if(!studentRoll.matches( "[0-9]*" )){
             Toast.makeText(context,R.string.et_roll_wrong,Toast.LENGTH_SHORT).show();
             return false;
