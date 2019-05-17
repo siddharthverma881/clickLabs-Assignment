@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/list_item_margin">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/RecyclerListItem"
+        android:text="@string/list_item_name"/>
+
+    <TextView
+        android:id="@+id/tv_roll"
+        style="@style/RecyclerListItem"
+        android:text="@string/list_item_roll"/>
+
+    <TextView
+        android:id="@+id/tv_class"
+        style="@style/RecyclerListItem"
+        android:text="@string/list_item_class"/>
+
+</LinearLayout>

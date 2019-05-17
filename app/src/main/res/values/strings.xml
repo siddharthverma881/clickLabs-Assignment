@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Assignment3</string>
+    <string name="list_item_name">Name</string>
+    <string name="list_item_roll">Roll No</string>
+    <string name="list_item_class">Class</string>
+    <string name="menu_views">Views</string>
+    <string name="menu_list_view">List View</string>
+    <string name="menu_grid_view">Grid View</string>
+    <string name="menu_sort_name">Sort By Name</string>
+    <string name="menu_sort_by_id">Sort By Roll</string>
+    <string name="btn_add_student">Add Student</string>
+    <string name="btn_update_student">Update</string>
+    <string name="student_list_nodata">No Data Found</string>
+
+    <string name="et_name_empty">Name field can not be empty</string>
+    <string name="et_name_short">Name too short</string>
+    <string name="et_name_wrong">Wrong input(name) entered</string>
+
+    <string name="et_roll_empty">Roll No field can not be empty</string>
+    <string name="et_roll_exists">Roll No already exists</string>
+    <string name="et_roll_wrong">Wrong input(roll no) entered</string>
+
+    <string name="et_class_empty">Class can not be empty</string>
+    <string name="et_class_wrong">Wrong input(class) entered</string>
+
+    <string name="builder_title">Choose an option</string>
+    <string name="dialog_btn_view">View</string>
+    <string name="dialog_btn_edit">Edit</string>
+    <string name="dialog_btn_delete">Delete</string>
+
+    <string name="intent_key_name">name</string>
+    <string name="intent_key_roll">roll</string>
+    <string name="intent_key_class">class</string>
+
+    <string name="builder_key">value</string>
+    <string name="intent_key_add">adding</string>
+    <string name="intent_key_view">viewing</string>
+    <string name="intent_key_edit">editing</string>
+
+    <string name="dialog_view_name">studentName</string>
+    <string name="dialog_view_roll">studentRoll</string>
+    <string name="dialog_view_class">studentClass</string>
+
+    <string name="dialog_edit_name">name</string>
+    <string name="dialog_edit_roll">roll</string>
+    <string name="dialog_edit_class">class</string>
+</resources>

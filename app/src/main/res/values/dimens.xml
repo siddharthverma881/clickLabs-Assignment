@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textMedium">50sp</dimen>
+    <dimen name="textSmall">30sp</dimen>
+
+    <dimen name="list_item_margin">5dp</dimen>
+    <dimen name="add_student_margin">50dp</dimen>
+
+</resources>

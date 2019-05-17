@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/add_student_margin"
+    style="@style/AppTheme.NoActionBar"
+    tools:context=".AddStudentActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"/>
+
+    <EditText
+        android:id="@+id/et_roll"
+        style="@style/EditText"
+        android:inputType="number"
+        android:layout_centerInParent="true"
+        android:imeOptions="actionNext"
+        android:hint="@string/list_item_roll"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/EditText"
+        android:hint="@string/list_item_name"
+        android:imeOptions="actionNext"
+        android:layout_above="@id/et_roll"/>
+
+    <EditText
+        android:id="@+id/et_class"
+        android:layout_below="@id/et_roll"
+        style="@style/EditText"
+        android:imeOptions="actionDone"
+        android:hint="@string/list_item_class"/>
+
+    <Button
+        android:id="@+id/add_student_btn_add"
+        android:text="@string/btn_add_student"
+        style="@style/TransparentButton"
+        />
+
+</RelativeLayout>
