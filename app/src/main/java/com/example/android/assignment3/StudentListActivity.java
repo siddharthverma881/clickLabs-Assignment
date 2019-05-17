@@ -182,6 +182,7 @@ public class StudentListActivity extends AppCompatActivity implements MyAdapter.
                         break;
                     case 2:
                         mStudentList.remove(position);
+                        mRollList.remove(position);
                         mAdapter.notifyItemRemoved(position);
                         if(mStudentList.isEmpty()){
                             mCode=0;
