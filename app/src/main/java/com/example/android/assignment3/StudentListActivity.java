@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -151,7 +152,6 @@ public class StudentListActivity extends AppCompatActivity implements MyAdapter.
         }
     }
 
-
     @Override
 
     /**
@@ -159,6 +159,7 @@ public class StudentListActivity extends AppCompatActivity implements MyAdapter.
      *When clicked on a particular view in the recycler view,this function will open a dialog box corresponding to which further actions take place
      */
     public void onItemClicked(View view,final int position) {
+        Log.v("item","view number: " + position + "clicked");
         AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
         final Bundle bundle = new Bundle();
         builder.setTitle(getString(R.string.builder_title));
@@ -205,6 +206,9 @@ public class StudentListActivity extends AppCompatActivity implements MyAdapter.
     }
     public void openEditStudentIntent(){
         Bundle bundle = new Bundle();
+        tempname=mStudentList.get(mViewPosition).getmName();
+        stringtemproll=mStudentList.get(mViewPosition).getmRoll();
+        tempclass=mStudentList.get(mViewPosition).getmClass();
         bundle.putSerializable(getString(R.string.builder_key), getString(R.string.intent_key_edit));
         bundle.putSerializable(getString(R.string.dialog_edit_name),tempname);
         bundle.putSerializable(getString(R.string.dialog_edit_roll),stringtemproll);
