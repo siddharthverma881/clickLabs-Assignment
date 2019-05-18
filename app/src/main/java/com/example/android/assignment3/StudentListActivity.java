@@ -162,6 +162,7 @@ public class StudentListActivity extends AppCompatActivity implements MyAdapter.
         Log.v("item","view number: " + position + "clicked");
         AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
         final Bundle bundle = new Bundle();
+        mViewPosition=position;
         builder.setTitle(getString(R.string.builder_title));
         String[] options = {getString(R.string.dialog_btn_view),getString(R.string.dialog_btn_edit),getString(R.string.dialog_btn_delete)};
         builder.setItems(options, new DialogInterface.OnClickListener() {
@@ -169,6 +170,9 @@ public class StudentListActivity extends AppCompatActivity implements MyAdapter.
             public void onClick(DialogInterface dialog, int which) {
                 switch (which) {
                     case 0:
+                        tempname=mStudentList.get(mViewPosition).getmName();
+                        stringtemproll=mStudentList.get(mViewPosition).getmRoll();
+                        tempclass=mStudentList.get(mViewPosition).getmClass();
                         bundle.putSerializable(getString(R.string.builder_key), getString(R.string.intent_key_view));
                         bundle.putSerializable(getString(R.string.dialog_view_name),tempname);
                         bundle.putSerializable(getString(R.string.dialog_view_roll),stringtemproll);
