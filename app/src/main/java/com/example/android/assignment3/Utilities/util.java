@@ -1,4 +1,4 @@
-package Utilities;
+package com.example.android.assignment3.Utilities;
 
 import android.content.Context;
 import android.widget.Toast;

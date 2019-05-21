@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import Utilities.util;
+import com.example.android.assignment3.Utilities.util;
 
 public class AddStudentActivity extends AppCompatActivity {
 
@@ -25,7 +25,7 @@ public class AddStudentActivity extends AppCompatActivity {
      * @param result checks for what reason the intent is called
      */
 
-    protected EditText etName,etRoll,etClass,newEtName,newEtRoll,newEtClass;
+    protected EditText etName,etRoll,etClass;
     protected String studentName,studentClass,studentRoll;
     protected Button btnAddStudent;
     protected ImageView backImage;
@@ -52,7 +52,7 @@ public class AddStudentActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                 //for getting the values in the edit texts
-                    getValues(etName,etRoll,etClass);
+                    getValues();
                     if (Util.validName(context, studentName, studentRoll, studentClass)) {
                         Intent returnIntent = getIntent();
                         returnIntent.putExtra(getString(R.string.intent_key_name), studentName);
@@ -104,10 +104,7 @@ public class AddStudentActivity extends AppCompatActivity {
 
                 @Override
                 public void onClick(View v) {
-                    newEtName = (EditText) findViewById(R.id.et_name);
-                    newEtRoll = (EditText) findViewById(R.id.et_roll);
-                    newEtClass = (EditText) findViewById(R.id.et_class);
-                    getValues(newEtName,newEtRoll,newEtClass);
+                    getValues();
                     if (Util.validName(context, studentName, studentRoll, studentClass)) {
                         Intent returnIntent = getIntent();
                         returnIntent.putExtra(getString(R.string.intent_key_name), studentName);
@@ -148,9 +145,9 @@ public class AddStudentActivity extends AppCompatActivity {
             }
         });
     }
-    public void getValues(EditText editTextName,EditText editTextRoll,EditText editTextClass){
-        studentName = editTextName.getText().toString();
-        studentRoll= editTextRoll.getText().toString();
-        studentClass = editTextClass.getText().toString();
+    public void getValues(){
+        studentName = etName.getText().toString();
+        studentRoll= etRoll.getText().toString();
+        studentClass = etClass.getText().toString();
     }
 }

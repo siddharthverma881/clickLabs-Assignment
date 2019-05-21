@@ -20,7 +20,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import Utilities.util;
+import com.example.android.assignment3.Utilities.util;
 
 public class StudentListActivity extends AppCompatActivity implements MyAdapter.RecyclerViewClickListener {
 
@@ -63,7 +63,7 @@ public class StudentListActivity extends AppCompatActivity implements MyAdapter.
             case R.id.menu_image :
                 mImage = !mImage;
                 mRecyclerView.setLayoutManager(mImage ? new GridLayoutManager(this,2) : new LinearLayoutManager(this));
-                mAdapter.notifyDataSetChanged();
+                mAdapter = new MyAdapter(mStudentList,this);
                 break;
              //show the list sorted alphabetically
             case R.id.menu_sortByName :

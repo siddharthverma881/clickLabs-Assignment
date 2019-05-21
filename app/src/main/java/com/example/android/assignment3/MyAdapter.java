@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
 
     private ArrayList<Student> mStudent;
-    private static RecyclerViewClickListener mItemListener;
+    private RecyclerViewClickListener mItemListener;
 
     MyAdapter(ArrayList<Student> student,final RecyclerViewClickListener mItemListener){
         mStudent=student;
