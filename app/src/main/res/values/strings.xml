@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Assignment4</string>
+
+    <string name="add_student_hint_name">Name</string>
+    <string name="add_student_hint_roll">Roll</string>
+    <string name="add_student_hint_class">Class</string>
+    <string name="add_student_btn">Add</string>
+
+    <string name="student_tv_nodata">No Data Found</string>
+    <string name="student_btn">Add Student</string>
+
+    <string name="tab_layout_list">List</string>
+    <string name="tab_layout_add">Add/Update</string>
+
+    <string name="value_adding">adding</string>
+    <string name="value_editing">editing</string>
+    <string name="value_viewing">viewing</string>
+
+    <string name="bundle_name">name</string>
+    <string name="bundle_roll">roll</string>
+    <string name="bundle_class">class</string>
+
+    <string name="builder_title">Select Option</string>
+    <string name="dialog_btn_view">View</string>
+    <string name="dialog_btn_edit">Edit</string>
+    <string name="dialog_btn_delete">Delete</string>
+
+    <string name="et_name_empty">Name field can not be empty</string>
+    <string name="et_roll_empty">Roll field can not be empty</string>
+    <string name="et_class_empty">Class field can not be empty</string>
+    <string name="et_name_wrong">Wrong input(name) entered</string>
+    <string name="et_roll_wrong">Wrong input(roll) entered</string>
+    <string name="et_class_wrong">Wrong input(class) entered</string>
+
+</resources>

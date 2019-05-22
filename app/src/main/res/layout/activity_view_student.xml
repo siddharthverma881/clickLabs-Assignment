@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ParentLayout"
+    android:id="@+id/view_frame_layout"
+    tools:context=".activities.ViewStudentActivity">
+
+    <RelativeLayout
+        style="@style/ParentLayout"
+        android:layout_margin="@dimen/add_student_layout_margin">
+
+        <EditText
+            android:id="@+id/et_roll"
+            style="@style/ActivityViewStudent"
+            android:layout_centerInParent="true"
+            />
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/ActivityViewStudent"
+            android:layout_above="@id/et_roll"/>
+        <EditText
+            android:id="@+id/et_class"
+            style="@style/ActivityViewStudent"
+            android:layout_below="@id/et_roll"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
