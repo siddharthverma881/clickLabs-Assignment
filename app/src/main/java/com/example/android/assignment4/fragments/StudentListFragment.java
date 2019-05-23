@@ -69,7 +69,6 @@ public class StudentListFragment extends Fragment implements RecyclerAdapter.Rec
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_student_list, container, false);
         setHasOptionsMenu(true);
-
         mRecyclerView = view.findViewById(R.id.recycler_view);
         mLayoutManager = new LinearLayoutManager(view.getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
@@ -154,14 +153,21 @@ public class StudentListFragment extends Fragment implements RecyclerAdapter.Rec
         mClassName = bundle.getString(constants.KEY_CLASS);
         if(result.equals(getString(R.string.value_editing))) {
             studentArrayList.remove(mViewPosition);
-            mAdapter.notifyItemRemoved(mViewPosition);
+            studentArrayList.add(mViewPosition,new Student(mName,mRoll,mClassName));
+            mAdapter = new RecyclerAdapter(studentArrayList,this);
+            mRecyclerView.setAdapter(mAdapter);
+            for(Student student : studentArrayList)
+                Log.i("Bhim",""+student.getmName());
         }
-        studentArrayList.add(new Student(mName,mRoll,mClassName));
+        else {
+            studentArrayList.add(new Student(mName, mRoll, mClassName));
+            mAdapter.notifyDataSetChanged();
+        }
         if(!studentArrayList.isEmpty()) {
             noDataFound.setVisibility(View.GONE);
             mRecyclerView.setVisibility(View.VISIBLE);
         }
-        mAdapter.notifyDataSetChanged();
+//        mAdapter.notifyDataSetChanged();
     }
 
     public void instantiateListener(StudentListFragmentListener mListener){
