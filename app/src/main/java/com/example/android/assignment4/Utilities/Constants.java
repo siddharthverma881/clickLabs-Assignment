@@ -8,4 +8,5 @@ public class Constants {
     public String KEY_NAME="name";
     public String KEY_ROLL="roll";
     public String KEY_CLASS="class";
+    public String VALUE_ADDING="adding";
 }

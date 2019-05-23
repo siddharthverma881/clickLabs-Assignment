@@ -56,6 +56,7 @@ public class AddStudentFragment extends Fragment {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                etName.requestFocus();
                 mName = etName.getText().toString();
                 mRoll = etRoll.getText().toString();
                 mClassName = etClassName.getText().toString();

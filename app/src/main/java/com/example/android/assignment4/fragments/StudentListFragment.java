@@ -56,8 +56,8 @@ public class StudentListFragment extends Fragment implements RecyclerAdapter.Rec
     private Button mAddStudent;
     private String mName,mRoll,mClassName;
     private int mViewPosition;
-    private String result;
     Constants constants = new Constants();
+    private String result=constants.VALUE_ADDING;
 
     public StudentListFragment() {
         // Required empty public constructor

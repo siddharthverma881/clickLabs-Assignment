@@ -50,7 +50,7 @@ public class StudentListActivity extends AppCompatActivity implements StudentLis
                 //getting position of tab
                 tabPosition = tab.getPosition();
                 if (tabPosition == constant.FRAGMENT_TWO_INTIAL) {
-                    AddStudentFragment fragmentDetail =(AddStudentFragment) mFragmentsList.get(1);
+                    AddStudentFragment fragmentDetail =(AddStudentFragment) mFragmentsList.get(constant.FRAGMENT_TWO_INTIAL);
                     fragmentDetail.clearEditText();
                 }
             }
@@ -90,13 +90,12 @@ public class StudentListActivity extends AppCompatActivity implements StudentLis
     //this is the method of interface studentListFragmentListener declared in studentListFragment
     @Override
     public void studentFragment(Bundle bundle) {
+        mViewPager.setCurrentItem(constant.FRAGMENT_TWO_INTIAL);
         if(bundle.getString(constant.KEY).equals(getString(R.string.value_adding)) ) {
-            mViewPager.setCurrentItem(constant.FRAGMENT_TWO_INTIAL);
             AddStudentFragment fragment = (AddStudentFragment) mFragmentsList.get(constant.FRAGMENT_TWO_INTIAL);
             fragment.clearEditText();
         }
         else if(bundle.getString(constant.KEY).equals(getString(R.string.value_editing)) ){
-            mViewPager.setCurrentItem(constant.FRAGMENT_TWO_INTIAL);
             AddStudentFragment fragment = (AddStudentFragment) mFragmentsList.get(constant.FRAGMENT_TWO_INTIAL);
             fragment.setEditText(bundle);
         }
