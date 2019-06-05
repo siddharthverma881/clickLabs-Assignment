@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="add_student_layout_margin">30dp</dimen>
+    <dimen name="view_student_tv">30sp</dimen>
+</resources>
