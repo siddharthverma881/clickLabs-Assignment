@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ParentLayout"
+    android:orientation="vertical"
+    tools:context=".activities.HomeActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_recyler_view"
+        style="@style/RecyclerView"
+        android:layout_weight="1"/>
+
+    <ProgressBar
+        android:id="@+id/home_progress_bar"
+        style="@style/ProgressBar"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/home_image"
+            style="@style/ImageView"
+            android:src="@drawable/boy4"/>
+
+        <TextView
+            android:id="@+id/home_tv_id"
+            style="@style/HomeTextView"
+            android:layout_below="@id/home_image"
+            android:text="@string/tv_id"/>
+
+        <TextView
+            android:id="@+id/home_tv_username"
+            style="@style/HomeTextView"
+            android:layout_below="@id/home_tv_id"
+            android:text="@string/tv_name"/>
+
+        <Button
+            android:id="@+id/home_btn_showposts"
+            style="@style/Button"
+            android:layout_below="@id/home_tv_username"
+            android:text="@string/btn_show_posts" />
+
+        <Button
+            android:id="@+id/home_btn_more_details"
+            style="@style/Button"
+            android:layout_below="@id/home_btn_showposts"
+            android:text="@string/btn_more_details" />
+
+    </RelativeLayout>
+</LinearLayout>

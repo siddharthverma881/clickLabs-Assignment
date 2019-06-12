@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textColorPrimary">#CFD8D7</item>
+    </style>
+
+    <style name="ParentLayout">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/mainColor</item>
+    </style>
+
+    <style name="RecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/recycler_margin</item>
+        <item name="android:layout_marginRight">@dimen/recycler_margin</item>
+        <item name="android:layout_marginTop">@dimen/recycler_margin</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ImageView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="HomeTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textView</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/tv_text_size</item>
+        <item name="android:layout_marginTop">@dimen/home_tv_margin</item>
+    </style>
+
+    <style name="ShowDetailsTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/tv_text_size</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/textView</item>
+    </style>
+
+    <style name="ViewListTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/tv_text_size</item>
+    </style>
+
+    <style name="PostIdTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/tv_text_size</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">@dimen/btn_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/home_btn_margin</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/btn_style</item>
+    </style>
+
+    <style name="SingleViewParent">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="cardView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/card_margin</item>
+    </style>
+
+</resources>

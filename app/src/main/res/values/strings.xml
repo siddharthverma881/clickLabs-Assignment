@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">assignment6</string>
+
+    <string name="view_list_username">Username</string>
+    <string name="view_list_id">Id</string>
+
+    <string name="tv_id">ID</string>
+    <string name="tv_name">NAME</string>
+    <string name="tv_user_id">USER ID</string>
+    <string name="tv_title">TITLE</string>
+    <string name="tv_body">BODY</string>
+    <string name="btn_show_posts">show posts</string>
+    <string name="btn_more_details">more details</string>
+
+    <string name="show_tv_user_id">"USER ID : "</string>
+    <string name="show_tv_name">"NAME : "</string>
+
+    <string name="post_tv_user_id">"USER ID : "</string>
+    <string name="post_tv_id">"ID : "</string>
+    <string name="post_tv_title">"TITLE : "</string>
+    <string name="post_tv_body">"BODY : "</string>
+
+    <string name="no_internet_title">ALERT</string>
+    <string name="no_internet_message">No Internet Connection Found!</string>
+    <string name="no_internet_btn">TRY AGAIN</string>
+    <string name="home_no_user_selected">No User Selected</string>
+
+    <string name="dialog_title">DETAILS</string>
+    <string name="dialog_msg_id">"ID : "</string>
+    <string name="dialog_msg_name">"NAME : "</string>
+    <string name="dialog_msg_username">"USER NAME : "</string>
+    <string name="dialog_msg_phone">"PHONE : "</string>
+    <string name="dialog_msg_email">"EMAIL : "</string>
+    <string name="dialog_msg_website">"WEBSITE : "</string>
+    <string name="dialog_msg_street">"STREET : "</string>
+    <string name="dialog_msg_suite">"SUITE : "</string>
+    <string name="dialog_msg_city">"CITY : "</string>
+    <string name="dialog_msg_zipcode">"ZIPCODE : "</string>
+    <string name="dialog_msg_company_name">"COMPANY NAME : "</string>
+    <string name="dialog_msg_catch_phrase">"CATCH PHRASE : "</string>
+    <string name="dialog_msg_company_bs">"COMPANY BS : "</string>
+
+    <string name="toast_msg">Please click BACK again to exit</string>
+</resources>

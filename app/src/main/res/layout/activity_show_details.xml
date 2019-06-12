@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ParentLayout"
+    tools:context=".activities.ShowDetailsActivity">
+
+    <ImageView
+        android:id="@+id/show_details_iv"
+        style="@style/ImageView"
+        android:src="@drawable/boy4"
+        android:layout_margin="@dimen/show_details_iv"/>
+
+    <TextView
+        android:id="@+id/show_details_tv_username"
+        style="@style/ShowDetailsTextView"
+        android:layout_below="@id/show_details_iv"
+        android:text="@string/tv_name"/>
+
+    <ProgressBar
+        android:id="@+id/show_details_progress_bar"
+        style="@style/ProgressBar"
+        android:layout_centerInParent="true"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/show_details_recycler_view"
+        style="@style/RecyclerView"
+        android:layout_below="@id/show_details_tv_username"
+        android:layout_marginBottom="@dimen/recycler_margin_bottom"/>
+
+</RelativeLayout>

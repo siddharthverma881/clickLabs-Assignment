@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_text_size">20sp</dimen>
+
+    <dimen name="recycler_margin">10dp</dimen>
+    <dimen name="card_margin">10dp</dimen>
+    <dimen name="view_iv_margin">10dp</dimen>
+    <dimen name="home_tv_margin">5dp</dimen>
+    <dimen name="home_btn_margin">5dp</dimen>
+    <dimen name="btn_width">120dp</dimen>
+    <dimen name="recycler_margin_bottom">20dp</dimen>
+
+    <dimen name="show_details_iv">20dp</dimen>
+
+
+</resources>
