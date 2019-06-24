@@ -49,9 +49,6 @@ public class StudentListActivity extends AppCompatActivity implements StudentLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_list);
 
-        mIntent = new IntentFilter(constants.SERVICE_BROADCAST_KEY);
-        registerReceiver(mReceiver,mIntent);
-
         mTabLayout = findViewById(R.id.tab_layout);
         mTabNames.add(getString(R.string.tab_layout_list));
         mTabNames.add(getString(R.string.tab_layout_add));
