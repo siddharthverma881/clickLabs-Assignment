@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">AssignmentRetry5</string>
+
+    <string name="tab_layout_list">List</string>
+    <string name="tab_layout_add">Add/Update</string>
+
+    <string name="student_tv_nodata">No Data Found</string>
+    <string name="student_btn">Add Student</string>
+
+    <string name="add_student_hint_name">Name</string>
+    <string name="add_student_hint_roll">Roll</string>
+    <string name="add_student_hint_class">Class</string>
+    <string name="add_student_btn_add">add</string>
+    <string name="add_student_btn_update">update</string>
+
+    <string name="toast_async_add_success">Successfully Added Through Async Task</string>
+    <string name="toast_async_add_fail">Failed To Add Through Async Task</string>
+    <string name="toast_async_edit_success">Successfully Edited Through Async Task</string>
+    <string name="toast_async_edit_fail">Failed To Edit Through Async Task</string>
+    <string name="toast_async_delete_success">Successfully Deleted Through Async Task</string>
+    <string name="toast_async_delete_fail">Failed To Delete Through Async Task</string>
+
+    <string name="toast_roll_exists">Roll Number Already Exists</string>
+
+    <string name="toast_service_add_success">Successfully Added Through Service</string>
+    <string name="toast_service_add_fail">Failed To Add Through Service</string>
+    <string name="toast_service_edit_success">Successfully Edited Through Service</string>
+    <string name="toast_service_edit_fail">Failed To Edit Through Service</string>
+    <string name="toast_service_delete_success">Successfully Deleted Through Service</string>
+    <string name="toast_service_delete_fail">Failed To Delete Through Service</string>
+
+    <string name="toast_intent_service_add_success">Successfully Added Through Intent Service</string>
+    <string name="toast_intent_service_add_fail">Failed To Add Through Intent Service</string>
+    <string name="toast_intent_service_edit_success">Successfully Edited Through Intent Service</string>
+    <string name="toast_intent_service_edit_fail">Failed To Edit Through Intent Service</string>
+    <string name="toast_intent_service_delete_success">Successfully Deleted Through Intent Service</string>
+    <string name="toast_intent_service_delete_fail">Failed To Delete Through Intent Service</string>
+
+    <string name="dialog_title">Select Options</string>
+    <string name="dialog_message_async_task">Async Task</string>
+    <string name="dialog_message_service">Service</string>
+    <string name="dialog_message_intent_service">Intent Service</string>
+    <string name="dialog_message_view">View</string>
+    <string name="dialog_message_edit">Edit</string>
+    <string name="dialog_message_delete">Delete</string>
+
+    <string name="et_name_empty">Name field can not be empty</string>
+    <string name="et_roll_empty">Roll field can not be empty</string>
+    <string name="et_class_empty">Class field can not be empty</string>
+    <string name="et_name_wrong">Wrong input(name) entered</string>
+    <string name="et_roll_wrong">Wrong input(roll) entered</string>
+    <string name="et_class_wrong">Wrong input(class) entered</string>
+</resources>
