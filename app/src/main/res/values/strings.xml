@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">assignment5Mvp</string>
+
+    <string name="tab_layout_element_one">LIST</string>
+    <string name="tab_layout_element_two">ADD STUDENT</string>
+
+    <string name="btn_add">add</string>
+    <string name="btn_update">update</string>
+
+    <string name="student_name">Name</string>
+    <string name="student_roll">Roll</string>
+    <string name="student_class">Class</string>
+
+    <string name="dialog_title">Select option</string>
+    <string name="dialog_message_view">View</string>
+    <string name="dialog_message_edit">Edit</string>
+    <string name="dialog_message_delete">Delete</string>
+
+    <string name="edit_text_error">INVALID INPUT</string>
+
+</resources>
