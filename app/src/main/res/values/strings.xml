@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LocationPermission3</string>
+    <string name="splash_tv">SPLASH</string>
+    <string name="location_btn">get location</string>
+    <string name="dialog_title">ALERT</string>
+    <string name="dialog_message">You must have full time access to location in order to function properly</string>
+    <string name="dialog_button">Enable</string>
+    <string name="location_tv_null">Location is null</string>
+</resources>
