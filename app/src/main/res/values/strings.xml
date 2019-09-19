@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Maps</string>
+
+    <string name="location_null">null value received in location</string>
+    <string name="location_fail">Failed to fetch location</string>
+    <string name="address_fail">Unable to get address</string>
+    <string name="polyline_fail">Unable to fetch polyline</string>
 </resources>
