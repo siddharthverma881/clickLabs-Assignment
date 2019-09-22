@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tvTextSize">30sp</dimen>
+
+    <dimen name="tvDistanceMarginTop">100dp</dimen>
+    <dimen name="tvTimeMarginTop">10dp</dimen>
+    <dimen name="tvLayoutWidth">200dp</dimen>
+    <dimen name="tvMarginRight">10dp</dimen>
+</resources>

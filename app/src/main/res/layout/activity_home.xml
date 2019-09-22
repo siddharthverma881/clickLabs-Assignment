@@ -11,29 +11,19 @@
 
    <TextView
        android:id="@+id/tvHomeDistance"
-       android:layout_width="200dp"
-       android:layout_height="wrap_content"
-       android:layout_alignParentRight="true"
-       android:layout_marginTop="100dp"
-       android:layout_marginRight="10dp"
-       android:text="Distance : "
-       android:textSize="30sp"
-       android:background="#FFF"
-       android:textColor="#000"
+       style="@style/TextView"
+       android:layout_marginTop="@dimen/tvDistanceMarginTop"
+       android:text="@string/tv_distance"
+       android:background="@drawable/circle"
        />
 
     <TextView
         android:id="@+id/tvHomeTime"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
-        android:text="Time : "
-        android:textSize="30sp"
-        android:layout_marginTop="10dp"
-        android:background="#FFF"
+        style="@style/TextView"
         android:layout_below="@id/tvHomeDistance"
-        android:textColor="#000"
+        android:text="@string/tv_time"
+        android:layout_marginTop="@dimen/tvTimeMarginTop"
+        android:background="@drawable/circle"
         />
 
 </RelativeLayout>

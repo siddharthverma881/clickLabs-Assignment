@@ -5,4 +5,14 @@
     <string name="location_fail">Failed to fetch location</string>
     <string name="address_fail">Unable to get address</string>
     <string name="polyline_fail">Unable to fetch polyline</string>
+    <string name="route_fail">Unable to fetch route</string>
+
+    <string name="tv_distance">"  Distance : "</string>
+    <string name="tv_time">"  Time : "</string>
+
+    <string name="toast_exit_app">Back Press again to exit the app</string>
+    <string name="toast_unable_connection">Unable to fetch connection of the device</string>
+    <string name="no_internet_title">ALERT!</string>
+    <string name="no_internet_message">You are not connected to internet</string>
+    <string name="no_internet_btn">Try Again</string>
 </resources>

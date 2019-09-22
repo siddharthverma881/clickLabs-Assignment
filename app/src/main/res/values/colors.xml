@@ -4,5 +4,9 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="tvTextColor">#000</color>
+    <color name="tvTextColor">#FFF</color>
+    <color name="tvBackground">#000</color>
+
+    <color name="alertDialogTextColor">#FFF</color>
+    <color name="alertDialogColorPrimary">#CFD8D7</color>
 </resources>

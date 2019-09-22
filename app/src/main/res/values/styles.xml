@@ -9,9 +9,17 @@
     </style>
 
     <style name="TextView">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">@dimen/tvLayoutWidth</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/tvTextColor</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textSize">@dimen/tvTextSize</item>
+        <item name="android:background">@color/tvBackground</item>
+    </style>
+
+    <style name="AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/alertDialogTextColor</item>
+        <item name="android:textColorPrimary">@color/alertDialogColorPrimary</item>
     </style>
 
 </resources>
