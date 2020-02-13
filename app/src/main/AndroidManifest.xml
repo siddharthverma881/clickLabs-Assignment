@@ -12,7 +12,7 @@
         <activity android:name=".AddStudentActivity"
             android:label="ADD STUDENT"
             android:parentActivityName=".StudentListActivity"
-            android:theme="@style/AppTheme.NoActionBar">></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".StudentListActivity"
             android:label="STUDENTLIST" />
