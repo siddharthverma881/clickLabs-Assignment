@@ -2,8 +2,10 @@ package com.example.android.assignment2;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+
+import com.example.siddharthlibrary.MainActivity;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputType;
@@ -210,6 +212,7 @@ public class Login extends AppCompatActivity {
         else{
             Snackbar snackbar = Snackbar.make(view, "Login successful" , Snackbar.LENGTH_SHORT);
             snackbar.show();
+            startActivity(new Intent(Login.this, MainActivity.class));
         }
     }
 }
