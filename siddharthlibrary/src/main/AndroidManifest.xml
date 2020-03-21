@@ -3,7 +3,7 @@
     package="com.example.siddharthlibrary">
 
     <application>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".HelloWorldActivity"></activity>
     </application>
 
 </manifest>
